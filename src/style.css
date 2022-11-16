@@ -7,3 +7,17 @@ body {
 h1 {
   color: red;
 }
+
+.gear {
+  border: none;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.buttons {
+  border: 2px red solid;
+}
+
+.btn {
+  margin-left: 1000px;
+}

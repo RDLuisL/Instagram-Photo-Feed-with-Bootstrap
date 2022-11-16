@@ -14,7 +14,7 @@
   </head>
   <body>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid">
     
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -29,7 +29,7 @@
           </svg>
           
           <!-- Imagen de Letras de Instagram -->
-          <img width="150px"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png">
+          <img width="150px"  class="text-left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png">
         </img>
         
         <div class="navbar-nav">
@@ -41,11 +41,11 @@
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
                               <div class="modal-content">
-                                  <p> <b class="text-left">
+                                  <p> <b class="text-left p-4">
                                     Create a new post
                                   </b>
                                   <!-- Icono de cerrar -->
-                                  <button type="button" class="btn-close" aria-label="Close"></button>
+                                  <button type="button" class="btn-close text-left p-2" aria-label="Close"></button>
                                   </p>
 
                                   <!-- Linea separadora -->
@@ -68,14 +68,14 @@
                                   <div class="modal-footer">
                                     
                                     <!-- Icono de Camara -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera text-left" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                       <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
                                       <circle cx="12" cy="13" r="3" />
                                     </svg>
                                     
                                     <!-- Icono de localizacion -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin text-left" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                       <circle cx="12" cy="11" r="3" />
                                       <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
@@ -126,13 +126,32 @@
       <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
               <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                  type="button" role="tab" aria-controls="home" aria-selected="true"><i
-                      class="fa-solid fa-table-cells"></i></button>
+                  type="button" role="tab" aria-controls="home" aria-selected="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="5" cy="5" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="19" cy="5" r="1" />
+                    <circle cx="5" cy="12" r="1" />
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="19" cy="12" r="1" />
+                    <circle cx="5" cy="19" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                    <circle cx="19" cy="19" r="1" />
+                  </svg>
           </li>
           <li class="nav-item" role="presentation">
               <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                  type="button" role="tab" aria-controls="profile" aria-selected="false"><i
-                      class="fa-solid fa-square"></i></button>
+                  type="button" role="tab" aria-controls="profile" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="9" y1="6" x2="20" y2="6" />
+                    <line x1="9" y1="12" x2="20" y2="12" />
+                    <line x1="9" y1="18" x2="20" y2="18" />
+                    <line x1="5" y1="6" x2="5" y2="6.01" />
+                    <line x1="5" y1="12" x2="5" y2="12.01" />
+                    <line x1="5" y1="18" x2="5" y2="18.01" />
+                  </svg>
           </li>
 
       </ul>

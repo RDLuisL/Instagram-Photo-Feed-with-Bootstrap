@@ -19,24 +19,81 @@
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           
+          <!-- Icono de Instagram -->
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <rect x="4" y="4" width="16" height="16" rx="4" />
             <circle cx="12" cy="12" r="3" />
             <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+
           </svg>
+          
+          <!-- Imagen de Letras de Instagram -->
           <img width="150px"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png">
         </img>
         
+        <div class="navbar-nav">
+        <!-- Boton de "Create a New post" -->
+              <button type="button" class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <p> <b class="text-left">
+                                    Create a new post
+                                  </b>
+                                  <!-- Icono de cerrar -->
+                                  <button type="button" class="btn-close" aria-label="Close"></button>
+                                  </p>
+
+                                  <!-- Linea separadora -->
+                                  <div class="modal-footer"></div>
+                                  
+                                  
+                                  <div class="modal-body">
+                                    <p>
+                                      <b>
+                                        Caption:
+                                      </b>
+                                    </p>
+                                      <form>
+                                          <div class="mb-3">
+                                              <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <!-- Linea separadora -->
+                                  <div class="modal-footer">
+                                    
+                                    <!-- Icono de Camara -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                      <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                                      <circle cx="12" cy="13" r="3" />
+                                    </svg>
+                                    
+                                    <!-- Icono de localizacion -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                      <circle cx="12" cy="11" r="3" />
+                                      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                    </svg>
+
+                                      <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-success">Publish</button>
+                                  </div>
+                              </div>
+                          </div>
+                </div>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           </button>
           
           <div class="collapse navbar-collapse buttons" id="navbarScroll">
-               
-            <!-- Boton de "Create a New post" -->
-               <button class="btn btn-success" type="button">Create a New post</button>
-            
+
                <!-- Menu desplegable -->
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 
@@ -49,10 +106,11 @@
                   </svg>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy abd Data</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" style="color: red" href="#">Log out</a></li>
                 </ul>
               </li>
             </ul>
@@ -61,26 +119,293 @@
       </nav>
       </div>
     </div>
-    <div>
-      
-      
-      
+    
+
+    <!-- Grid de Fotos -->
+    <nav>
       <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                type="button" role="tab" aria-controls="home" aria-selected="true"><i
-                    class="fa-solid fa-table-cells"></i></button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                type="button" role="tab" aria-controls="profile" aria-selected="false"><i
-                    class="fa-solid fa-square"></i></button>
-        </li>
-    </ul>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                  type="button" role="tab" aria-controls="home" aria-selected="true"><i
+                      class="fa-solid fa-table-cells"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                  type="button" role="tab" aria-controls="profile" aria-selected="false"><i
+                      class="fa-solid fa-square"></i></button>
+          </li>
+
+      </ul>
+      <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <!-- Primera fila de fotos -->
+              <div class="card-group">
+                  <!-- 1/9 Hello my baby, hello my honey-->
+                  <div class="card">
+                      <img src="https://i.kym-cdn.com/photos/images/original/001/085/834/13a" alt="Hello my baby, hello my honey" class=" mx-2 my-2" alt="">
+                  </div>
+                  <!-- 2/9 -->
+                  <div class="card">
+                      <img src="https://2.bp.blogspot.com/-wbdHPtgkijk/WdJbBfINctI/AAAAAAAAiPQ/2q3U9e3W3zslJBWpnW6chl67fMOAw8YhgCLcBGAs/s1600/henery-hawk_558540.jpeg" alt="Kike Gavilán" class=" mx-2 my-2" alt="">
+                  </div>
+                  <!-- 3/9 -->
+                  <div class="card">
+                      <img src="http://pm1.narvii.com/7635/862f2057387a88834b105fccc6ac8e8500d23be6r1-1334-750v2_uhq.jpg" alt="Marvin Martian" class=" mx-2 my-2" alt="">
+                  </div>
+              </div>
+              <!-- Segunda fila de fotos -->
+              <div class="card-group">
+                  <!-- 4/9 -->
+                  <div class="card">
+                      <img src="http://i.ytimg.com/vi/wYi_hq2p1Ac/hqdefault.jpg" alt="Slow Rodriguez"class=" mx-2 my-2" alt="">
+                  </div>
+                  <!-- 5/9 -->
+                  <div class="card">
+                      <img src="https://orgoglionerd.it/wp-content/uploads/2022/01/Looney-tunes-cartoons-boing.jpg" alt="Coyote"class=" mx-2 my-2" alt="">
+                  </div>
+                  <!-- 6/9 -->
+                  <div class="card">
+                      <img src="https://i.pinimg.com/originals/3e/f7/25/3ef72599394e9cd7b6845d15a7d3e48d.jpg" alt="kitty & Dog"class=" mx-2 my-2" alt="">
+                  </div>
+              </div>
+              <!-- Tercera fila de fotos -->
+              <div class="card-group">
+                  <!-- 7/9 -->
+                  <div class="card">
+                      <img src="https://i.pinimg.com/originals/ac/fb/2f/acfb2f58bb1d90c97ec504724231e3d5.jpg" alt="Hairy Raising Hare" class=" mx-2 my-2" alt="">
+                  </div>
+                  <!-- 8/9 -->
+                  <div class="card">
+                      <img src="https://www.cromosomax.com/pics/2021/03/pepe-le-pew-de-los-looney-tunes-se-retira-ante-la-preocupacion-de-que-normalice-la-cultura-de-la-violacion.jpg" alt="Pepe Le Pew" class=" mx-2 my-2" alt="">
+                  </div>
+                  <!-- 9/9 -->
+                  <div class="card">
+                      <img src="https://www.cinepremiere.com.mx/wp-content/uploads/2019/06/looney-tunes-nuevos-episodios.jpg" alt="Angry Elmer" class=" mx-2 my-2" alt="">
+                  </div>
+              </div>
+          </div> 
       
-  
+
+          <!-- Columnas de Imagenes -->
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <section class="py-5 mt-2">
+                <div class="card m-auto row" style="width: 40rem;">
+                    <div class="card-header bg-body mt-2">
+                        <p class="position-absolute top-0 start-0">Hello my Baby, Hello my Darling 🎵</p>
+                        <p class="position-absolute top-0 end-0"">1/9</p>
+                    </div>
+                    <img src="https://i.kym-cdn.com/photos/images/original/001/085/834/13a" alt="Singer Frog" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><strong>208 Likes ❤️</strong></p>
+                            <p class="card-text">This is my first photo of the feed. This is a Singer Frog who only shows his singer and dancing skills just to one person. This try to get rewards about this frog but he notice at the end that the frog only show him his act.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-body d-flex mb-3 pb-0">
+                            <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                            <div class="p-2 bg-body">
+                                <P>Comment...</P>
+                            </div>
+                            <div class="ms-auto p-2 bg-body"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                        </div>
+
+                    </div>
+
+                    <div class="card m-auto row " style="width: 40rem;">
+                        <div class="card-header bg-body mt-2">
+                            <p class="position-absolute top-0 start-0">Kike Gavilan</p>
+                            <p class="position-absolute top-0 end-0"">2/9</p>
+                        </div>
+                        <img src=" https://2.bp.blogspot.com/-wbdHPtgkijk/WdJbBfINctI/AAAAAAAAiPQ/2q3U9e3W3zslJBWpnW6chl67fMOAw8YhgCLcBGAs/s1600/henery-hawk_558540.jpeg" alt="Kike Gavilan" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><strong>88 Likes ❤️</strong></p>
+                                <p class="card-text">This is Kike Gavilan draging Gallo Claudio to fight.
+                                    <strong>#Breathecode</strong>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                <div class="p-2 bg-body">
+                                    <P>Comment...</P>
+                                </div>
+                                <div class="ms-auto p-2 bg-body"><i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card m-auto row " style="width: 40rem;">
+                            <div class="card-header bg-body mt-2">
+                                <p class="position-absolute top-0 start-0"><strong>Marvin el Marciano</strong></p>
+                                <p class="position-absolute top-0 end-0"">3/9</p>
+                            </div>
+                            <img src="http://pm1.narvii.com/7635/862f2057387a88834b105fccc6ac8e8500d23be6r1-1334-750v2_uhq.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><strong>89 Likes ❤️</strong></p>
+                                    <p class="card-text">This is Martian Marvin who lives alone and try to take over the earth
+                                        <strong></strong>
+                                    </p>
+                                </div>
+                                <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                    <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                    <div class="p-2 bg-body">
+                                        <P>Comment...</P>
+                                    </div>
+                                    <div class="ms-auto p-2 bg-body"><i
+                                            class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+
+                            </div>
+                            <div class="card m-auto row " style="width: 40rem;">
+                                <div class="card-header bg-body mt-2">
+                                    <p class="position-absolute top-0 start-0"><strong> Slow Rodriguez</strong></p>
+                                    <p class="position-absolute top-0 end-0"">4/9</p>
+                                </div>
+                                <img src="http://i.ytimg.com/vi/wYi_hq2p1Ac/hqdefault.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>150 Likes ❤️</strong></p>
+                                        <p class="card-text">Slow Rodriguez is a Speedy Gonzalez's causin, who is really slow but he solve out his threads with a gun
+                                            <strong>#Breathecode</strong>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                        <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="p-2 bg-body">
+                                            <P>Comment...</P>
+                                        </div>
+                                        <div class="ms-auto p-2 bg-body"><i
+                                                class="fa-solid fa-ellipsis-vertical"></i></div>
+                                    </div>
+
+                                </div>
+                                <div class="card m-auto row " style="width: 40rem;">
+                                    <div class="card-header bg-body mt-2">
+                                        <p class="position-absolute top-0 start-0">Coyote</p>
+                                        <p class="position-absolute top-0 end-0"">5/9</p>
+                                    </div>
+                                    <img src="https://orgoglionerd.it/wp-content/uploads/2022/01/Looney-tunes-cartoons-boing.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>48 Likes ❤️</strong></p>
+                                            <p class="card-text">Coyote is a genius who invent devices to catch the road runner to eat him
+                                                <strong>#Breathecode</strong>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                            <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                            <div class="p-2 bg-body">
+                                                <P>Comment...</P>
+                                            </div>
+                                            <div class="ms-auto p-2 bg-body"><i
+                                                    class="fa-solid fa-ellipsis-vertical"></i></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card m-auto row " style="width: 40rem;">
+                                        <div class="card-header bg-body mt-2">
+                                            <p class="position-absolute top-0 start-0">Dog and kitty</p>
+                                            <p class="position-absolute top-0 end-0"">6/9</p>
+                                        </div>
+                                        <img src="https://i.pinimg.com/originals/3e/f7/25/3ef72599394e9cd7b6845d15a7d3e48d.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text"><strong>89 Likes ❤️</strong></p>
+                                                <p class="card-text">TThis dog felt geloosy about the tiny kitty futhermore He protect her and fall in love
+                                                    <strong>#Breathecode</strong>
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                                <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                                <div class="p-2 bg-body">
+                                                    <P>Comment...</P>
+                                                </div>
+                                                <div class="ms-auto p-2 bg-body"><i
+                                                        class="fa-solid fa-ellipsis-vertical"></i></div>
+                                            </div>
+    
+                                        </div>
+                                        <div class="card m-auto row " style="width: 40rem;">
+                                            <div class="card-header bg-body mt-2">
+                                                <p class="position-absolute top-0 start-0">Hairy Orange Hare</p>
+                                                <p class="position-absolute top-0 end-0"">7/9</p>
+                                            </div>
+                                            <img src="https://picsum.photos/id/230/400/300" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <p class="card-text"><strong>99 Likes ❤️</strong></p>
+                                                    <p class="card-text">Lol.... I can not remember this cartoon hahahahaha
+                                                        <strong>#Breathecode</strong>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                                    <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                                    <div class="p-2 bg-body">
+                                                        <P>Comment...</P>
+                                                    </div>
+                                                    <div class="ms-auto p-2 bg-body"><i
+                                                            class="fa-solid fa-ellipsis-vertical"></i></div>
+                                                </div>
+        
+                                            </div>
+
+                                            <div class="card m-auto row " style="width: 40rem;">
+                                                <div class="card-header bg-body mt-2">
+                                                    <p class="position-absolute top-0 start-0">Pepe Le Pew</p>
+                                                    <p class="position-absolute top-0 end-0"">8/9</p>
+                                                </div>
+                                                <img src="https://www.cromosomax.com/pics/2021/03/pepe-le-pew-de-los-looney-tunes-se-retira-ante-la-preocupacion-de-que-normalice-la-cultura-de-la-violacion.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"><strong>29 Likes ❤️</strong></p>
+                                                        <p class="card-text"> Pepe Le Pew is a shunk how is a casanova and try to get the love about a cat
+                                                            <strong>#Breathecode</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                                        <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                                        <div class="p-2 bg-body">
+                                                            <P>Comment...</P>
+                                                        </div>
+                                                        <div class="ms-auto p-2 bg-body"><i
+                                                                class="fa-solid fa-ellipsis-vertical"></i></div>
+                                                    </div>
+            
+                                                </div>
+                                                <div class="card m-auto row " style="width: 40rem;">
+                                                    <div class="card-header bg-body mt-2">
+                                                        <p class="position-absolute top-0 start-0">Angry Elmer</p>
+                                                        <p class="position-absolute top-0 end-0"">9/9</p>
+                                                    </div>
+                                                    <img src="https://www.cinepremiere.com.mx/wp-content/uploads/2019/06/looney-tunes-nuevos-episodios.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text"><strong>100 Likes ❤️</strong></p>
+                                                            <p class="card-text">Angry Elmer go to a hairdressing but he can not realice that the guy is really Bugs Bunny and cheat on him
+                                                                <strong>#Breathecode</strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer bg-body d-flex mb-3 pb-0">
+                                                            <div class="p-2 bd bg-body"><i class="fa-solid fa-heart"></i></div>
+                                                            <div class="p-2 bg-body">
+                                                                <P>Comment...</P>
+                                                            </div>
+                                                            <div class="ms-auto p-2 bg-body"><i
+                                                                    class="fa-solid fa-ellipsis-vertical"></i></div>
+                                                        </div>
+                
+                                                    </div>
+
+
+
+                                                
+            </section>
+
+        </div>
 
     </div>
+
+
+
+
+
+</div>    
+
+
+
+
 
 
 
